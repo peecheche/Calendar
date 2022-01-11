@@ -1,0 +1,70 @@
+.myCalendar{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red;  */
+    /* padding-inline: 1.5rem;
+    padding-block-end: 1.5rem; */
+    
+}
+
+.myCalendar-header{
+    display: flex;
+    flex-direction: row;
+    font: var(--body1-medium);
+    color: var(--gray30);
+    /* inline-size: 12.25rem; */
+    width: 100%;
+    justify-content: space-between;
+    /* border: 1px solid pink; */
+    align-items: center;
+    margin-block-end: .5rem;
+}
+
+.myCalendar-navigation a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    /* border: 1px solid blue; */
+}
+
+.myCalendar-header i {
+   
+}
+
+.myCalendar-list { /* UL */ 
+    /* border: 1px solid orange;  */
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    font: var(--body1-regular);
+    color: var(--gray30);
+    gap: .75rem;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.myCalendar-list i{
+    /* border: 1px solid violet; */
+    padding-inline-start: .25rem;
+    padding-inline-end: .25rem;
+}
+
+.myCalendar-options a{ /* LI */ 
+    /* border: 1px solid pink;  */
+    /* padding-block: .125rem; */
+    /* inline-size: 12.25rem; */
+    display: flex;
+    text-decoration: none;
+    color: var(--gray30);
+    height: 1.5rem;
+    align-items: center;
+    font: var(--body1-regular);
+    
+}
+
+.myCalendar-options a:hover{ /* LI */ 
+    background: var(--gray10);
+    color: var(--gray30);
+}

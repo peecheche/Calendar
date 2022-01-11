@@ -1,0 +1,17 @@
+.taskCell-day {
+    border-inline-start: 1px solid currentColor;
+    border-block-end: 1px solid currentColor;
+    padding: .25rem;
+    
+}
+
+.taskCell-day.is-active::before{
+    content: '(No Title)';
+    font-size: small;
+    background: #c6dafc;
+    padding: .25rem;
+    border-radius: .25rem;
+    display: block; /* para que repete los margenes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+

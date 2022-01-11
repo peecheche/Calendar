@@ -1,0 +1,22 @@
+.page {
+    display: grid;
+    grid-template-columns: 16.25rem 1fr;/*  ^ definimos tamano de header in-linesize #rem para sidebar(ancho) y el resto de campo disponible */
+    grid-template-rows: 6rem 1fr;/*  ^ Aqui se define el alto del header con 6rem*/
+    block-size: 100vh;/* se alarga en el eje transversal*/
+    grid-template-areas: "header header" "sidebar calendar"; /* Definimos areas */
+}
+
+.page .header {
+    grid-area: header; /* Definimos areas */
+}
+
+.page .sidebar {
+    /* border: 1px solid yellow; */
+    grid-area: sidebar;/* Definimos areas */
+    
+
+}
+
+.page .calendar { 
+    grid-area: calendar;/* Definimos areas */
+}

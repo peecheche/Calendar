@@ -1,0 +1,51 @@
+.calendarDayOfWeek {
+    --minBlockSize: 4rem;
+    --maxBlockSize:auto;
+/*  ^ variables para row   */
+    --minInlineSize: 5rem;
+    --maxInlineSize: 1fr;/* tamano maximo de ancho */
+    color:var(--gray20);
+    padding-inline: 1.5rem;
+    position: relative; /* hicimos esto despues, para colocar la barra roja que determina current Time */
+
+}
+
+.calendarDayOfWeek-detail {
+    display: grid;
+    grid-template-columns: auto repeat(7, minmax(var(--minInlineSize),var(--maxInlineSize)));
+/* para lograr tamanos especifico (se ve al poner contenido)*/
+    grid-template-rows: 7rem repeat(25, minmax(var(--minBlockSize),var(--maxBlockSize)));
+/*  ^ primer elemento en rem y el resto auto           Altura */
+    min-block-size: 700px;
+    
+}
+
+
+
+/* 
+<main class="calendarDayOfWeek"> 
+<div class="currentTime"></div><!-- Indicador rojo -->
+<div class="calendarDayOfWeek-detail">
+    <div class="timezoneCell">GMT-5</div><!-- time Zone Cell -->
+    
+    <h2 class="calendarDay-view is-selected">
+    <a href="./calendar-by-day.html" aria-label="Sunday 02 of January">
+        <time datetime="2022-01-02">
+        <span>WED</span> <br>
+        <span>5</span>
+        </time>
+    </a>
+    </h2>
+    
+        <span class="hourCell"></span>
+
+    <div class="taskCell-day">
+        <!-- <div tabindex="0" class="task" aria-label="de 17:00 a 18:00, Hacer ejercicio">
+        <p>Ejercicio</p>
+        <p>
+        <time datetime="17:00">5</time>-<time datetime="18:00">6 pm</time>
+        </p>
+    </div>Task -->
+    </div><!-- Task Cell-->
+</div>
+</main><!-- Calendar Day  --> */

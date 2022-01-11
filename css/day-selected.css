@@ -1,0 +1,59 @@
+.daySelected{
+    /* border: 1px solid red; */
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    position: sticky;
+    inset-block-start: 0;
+    background: var(--white);
+    
+    border-block-end: 1px solid currentColor;
+
+    }
+
+.daySelected a{
+    /* border: 1px solid red; */
+    text-decoration: none;
+    color: var(--blue10);
+    font: var(--body1-medium);
+    inline-size: 2.75rem;
+    block-size: 2.75rem;
+    text-align: center;
+}
+
+.daySelected::before {
+    content: '';
+    inline-size: 1px;
+    block-size: 2rem;
+    background: currentColor;
+    position: absolute;
+    inset-block-end: 0;
+    
+}
+
+.daySelected span:nth-of-type(1) {
+    /* border: 1px solid red; */
+    color: var(--blue10);
+    font: var(--body1-medium);
+    
+}
+
+.daySelected span:nth-of-type(2) {
+    /* border: 1px solid red;  */
+    
+    inline-size: 2.75rem;
+    block-size: 2.75rem;
+    display: inline-block;
+    border-radius: 50%;
+    color: var(--white);
+    font: var(--subtitle-subtitle1);
+    background: var(--blue10);
+    align-self: center;
+    
+    
+}
+
+

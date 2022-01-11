@@ -1,0 +1,33 @@
+.searchPeople  {
+    /* border: 1px solid red;  */
+    position: relative;
+    flex: 0; 
+    /* padding-inline: 1.5rem;
+    padding-block: 1.5rem; */
+}
+
+.searchPeople i {
+    /* border: 1px solid blue; */
+    position: absolute;
+    color: var(--gray50);  
+    padding-inline-start: 1rem;
+    padding-inline-end: .5rem;
+    padding-block: 0.75rem;
+}
+
+.search input {
+    inline-size: 12.25rem;
+    padding-inline-start: 2.5rem;
+    padding-inline-end: 3.125rem;
+    padding-block: 0.625rem;
+    font: var(--body1-regular);
+    color: var(--gray20);
+    background: var(--gray10);
+    height: 2.5rem;
+    width: 100%;
+    border-radius: .25rem;
+    border: none;
+    box-sizing: border-box;
+    /* border: 1px solid yellow; */
+}
+
